@@ -9,6 +9,7 @@ int cps1;
 int cps2;
 int timeOut;
 int cpsCounter = 0;
+bool ToggleClicker = FALSE;
 std::mt19937 mTwister;
 
 int select() {
@@ -32,7 +33,17 @@ int main()
     select();
     randCPSgen();
     for (;;) {
-        if (GetAsyncKeyState(VK_F1))
+        //use whatever button you want to toggle to program
+        if (GetKeyState('P') & 0x8000) {
+            ToggleClicker = !ToggleClicker;
+            if (ToggleClicker)
+                printf("Active");
+            else
+                printf("Disabled");
+            Sleep(120);
+        }
+
+        if (GetKeyState('Q') && ToggleClicker)
         {
             mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, NULL, NULL);
             mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, NULL, NULL);
