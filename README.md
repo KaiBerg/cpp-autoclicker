@@ -1,5 +1,6 @@
 # cpp-autoclicker
-![Tux, the Linux mascot](/img/computer-mouse.png)
+![Tux, the Linux mascot](/src/sniper.gif)
 #Features
 Randomizer (selectable algorithm coming)
 Not bloated soydevjs program
+sex
