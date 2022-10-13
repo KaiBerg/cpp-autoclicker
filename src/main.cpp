@@ -3,6 +3,7 @@
 #define NOMINMAX
 #include <Windows.h>
 #include <string>
+#include <Nuklear/nuklear.h>
 
 int cps;
 int cps1;
@@ -40,7 +41,7 @@ int main()
                 printf("Active");
             else
                 printf("Disabled");
-            Sleep(120);
+            Sleep(128);
         }
 
         if (GetKeyState('Q') && ToggleClicker)
