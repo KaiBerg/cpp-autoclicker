@@ -13,7 +13,7 @@ bool ToggleClicker = FALSE;
 std::mt19937 mTwister;
 
 int select() {
-    printf("Enter CPS range you lazy mf: ");
+    printf("Enter CPS range for epic: ");
 
     std::cin >> cps1;
     std::cin >> cps2;
